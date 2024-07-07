@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URTABIRSURYA</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="javascript/main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="logo">
+        <h1>SELAMAT DATANG DI YOUR TABIRSURYA</h1>
+        <p>Unggah gambar untuk memprediksi jenis kulit Anda dan dapatkan rekomendasi jenis sunscreen</p>
+        <form method="POST" action="/hasil prediksi" enctype="multipart/form-data">
+            <div class="file-input">
+                <label for="file">Pilih gambar</label>
+                <input type="file" name="file" id="file" accept="image/*" required>
+            </div>
+            <input type="submit" value="Unggah dan Prediksi">
+        </form>
+        <div class="result" id="result">
+            <h2>Hasil Prediksi</h2>
+            <p>Jenis kulit: Normal</p>
+            <p>Rekomendasi: </p>
+        </div>
+    </div>
+</body>
+</html>
