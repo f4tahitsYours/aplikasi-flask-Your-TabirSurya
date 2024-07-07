@@ -14,7 +14,9 @@
 
 ## Deskripsi Proyek
 
-**URTABIRSURYA** adalah aplikasi berbasis web yang memungkinkan pengguna untuk mengunggah gambar kulit mereka untuk memprediksi jenis kulit dan mendapatkan rekomendasi produk sunscreen yang sesuai. Aplikasi ini memanfaatkan model pembelajaran mesin untuk klasifikasi jenis kulit dan memberikan saran berdasarkan jenis kulit yang terdeteksi.
+**URTABIRSURYA** adalah aplikasi berbasis web yang memungkinkan pengguna untuk mengunggah gambar kulit mereka untuk memprediksi jenis kulit dan mendapatkan rekomendasi produk sunscreen yang sesuai. Ide aplikasi ini terinspirasi dari hasil model machine learning teman saya, dan saya mengembangkannya menjadi aplikasi sederhana menggunakan Flask.
+
+Aplikasi ini memanfaatkan model pembelajaran mesin untuk klasifikasi jenis kulit dan memberikan saran berdasarkan jenis kulit yang terdeteksi. Tujuan utama aplikasi ini adalah membantu pengguna dalam memilih produk perawatan kulit yang sesuai dengan jenis kulit mereka.
 
 ---
 
