@@ -253,7 +253,7 @@ body {
     width: 100px;
     position: absolute;
     top: -90px;
-    left: calc(50% - 55px); /* Adjust position based on logo width */
+    left: calc(50% - 55px); /* Menyesuaikan posisi berdasarkan lebar logo */
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: white;
