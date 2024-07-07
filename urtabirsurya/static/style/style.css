@@ -1,0 +1,100 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #f3e6f7 25%, #e9e1f2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+.logo {
+    width: 100px;
+    position: absolute;
+    top: -90px;
+    left: calc(50% - 55px); /* Adjust position based on logo width */
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #6a1b9a;
+}
+
+p {
+    margin: 0 0 20px;
+    font-size: 16px;
+    color: #777;
+}
+
+.file-input {
+    margin-bottom: 20px;
+}
+
+.file-input label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #6a1b9a;
+}
+
+input[type="file"] {
+    border: 2px solid #ddd;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    background-color: #6a1b9a;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #4a148c;
+}
+
+.result {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.result h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #6a1b9a;
+}
+
+.result p {
+    font-size: 16px;
+    color: #555;
+}
