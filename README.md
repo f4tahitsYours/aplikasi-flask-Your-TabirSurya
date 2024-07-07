@@ -1,5 +1,3 @@
-Berikut adalah dokumentasi untuk aplikasi Flask Anda yang mencakup struktur proyek, deskripsi, dan instruksi instalasi serta penggunaan:
-
 # Dokumentasi Proyek: URTABIRSURYA
 
 ## Daftar Isi
