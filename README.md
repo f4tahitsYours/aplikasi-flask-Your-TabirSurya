@@ -363,12 +363,123 @@ document.querySelector('form').onsubmit = async function(e) {
 }
 ```
 
----
+Untuk menjalankan proyek ini, Anda perlu menginstal beberapa ekstensi dan pustaka di Anaconda dan Visual Studio Code. Berikut adalah langkah-langkah dan daftar yang Anda perlukan:
 
-## Lisensi
+### Anaconda
 
-Proyek ini dilisensikan di bawah lisensi [MIT License](LICENSE).
+1. **Membuat dan Mengaktifkan Lingkungan Virtual**
 
----
+   Pertama, buat dan aktifkan lingkungan virtual di Anaconda untuk memastikan semua dependensi terisolasi:
+   ```bash
+   conda create -n flask_env python=3.10
+   conda activate flask_env
+   ```
 
-Jika ada pertanyaan atau butuh bantuan lebih lanjut, jangan ragu untuk menghubungi saya.
+2. **Menginstal Dependensi**
+
+   Anda perlu menginstal Flask dan TensorFlow di lingkungan Anaconda:
+   ```bash
+   conda install flask
+   pip install tensorflow
+   ```
+
+   **Catatan**: Versi TensorFlow yang Anda gunakan harus kompatibel dengan Python dan versi CUDA/CuDNN di sistem Anda. TensorFlow 2.10.0 adalah versi yang telah Anda gunakan, tetapi periksa kesesuaian dengan sistem Anda.
+
+3. **Dependensi Tambahan (Opsional)**
+
+   Jika diperlukan, Anda mungkin perlu menginstal dependensi lain:
+   ```bash
+   conda install -c conda-forge pillow
+   pip install numpy
+   ```
+
+### Visual Studio Code (VS Code)
+
+1. **Ekstensi VS Code**
+
+   Berikut adalah beberapa ekstensi yang berguna untuk proyek Python/Flask:
+
+   - **Python**: Memungkinkan linting, debugging, dan fitur lainnya untuk pengembangan Python.
+     ```text
+     ms-python.python
+     ```
+   - **Jupyter**: Jika Anda menggunakan Jupyter Notebooks di VS Code.
+     ```text
+     ms-toolsai.jupyter
+     ```
+   - **Flask Snippets**: Memberikan snippet kode untuk pengembangan Flask.
+     ```text
+     tuxtina.flask-snippets
+     ```
+   - **HTML CSS Support**: Menambahkan dukungan untuk HTML dan CSS.
+     ```text
+     ecmel.vscode-html-css
+     ```
+   - **Live Server**: Untuk memudahkan pengembangan frontend dengan hot reload.
+     ```text
+     ritwickdey.liveserver
+     ```
+   - **Prettier - Code formatter**: Untuk format otomatis kode JavaScript, HTML, dan CSS.
+     ```text
+     esbenp.prettier-vscode
+     ```
+
+2. **Mengatur Interpreter Python di VS Code**
+
+   Pastikan interpreter Python yang dipilih adalah dari lingkungan Anaconda yang Anda buat. Anda dapat mengaturnya dengan menekan `Ctrl+Shift+P` (atau `Cmd+Shift+P` di Mac) dan mengetik `Python: Select Interpreter`, kemudian pilih `flask_env`.
+
+3. **Linting dan Formatting**
+
+   Untuk linting dan formatting kode, instal alat-alat berikut jika belum terpasang:
+   ```bash
+   pip install pylint
+   pip install black
+   ```
+
+   Setelah itu, konfigurasi VS Code untuk menggunakan linting dan formatter ini di file `settings.json`:
+   ```json
+   {
+       "python.linting.enabled": true,
+       "python.linting.pylintEnabled": true,
+       "editor.formatOnSave": true,
+       "python.formatting.provider": "black"
+   }
+   ```
+
+### Ringkasan Dependensi
+
+#### Di Anaconda:
+
+- Python 3.10
+- Flask
+- TensorFlow (versi kompatibel, misal 2.10.0)
+- Pillow
+- NumPy
+
+#### Di VS Code (Ekstensi):
+
+- Python (`ms-python.python`)
+- Jupyter (`ms-toolsai.jupyter`)
+- Flask Snippets (`tuxtina.flask-snippets`)
+- HTML CSS Support (`ecmel.vscode-html-css`)
+- Live Server (`ritwickdey.liveserver`)
+- Prettier - Code formatter (`esbenp.prettier-vscode`)
+
+### Instalasi Otomatis Pustaka
+
+Buat file `requirements.txt` untuk memudahkan instalasi pustaka di Anaconda:
+
+**`requirements.txt`:**
+```text
+flask
+tensorflow==2.10.0
+pillow
+numpy
+```
+
+Kemudian, jalankan:
+```bash
+pip install -r requirements.txt
+```
+
+Dokumentasi dan petunjuk ini seharusnya membantu Anda dalam menyiapkan lingkungan dan memulai pengembangan dengan proyek URTABIRSURYA di Anaconda dan Visual Studio Code.
