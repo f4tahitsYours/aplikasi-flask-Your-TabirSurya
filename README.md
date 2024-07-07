@@ -62,7 +62,7 @@ Pastikan Anda memiliki perangkat lunak berikut yang terpasang pada sistem Anda:
 
 1. **Clone Repository**
    ```bash
-   git clone https://github.com/user/repository.git
+   git clone https://github.com/f4tahitsYours/repository.git
    cd URTABIRSURYA
    ```
 
